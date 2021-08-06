@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <html>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
     <head>
         <title></title>
         <link rel="stylesheet" href="styles/styles.css">
@@ -11,14 +14,14 @@
             </div>
             <nav class="inline-block">
                 <ul>
-                    <li class="inline-block">About</li>
-                    <li class="inline-block">Skills</li>
-                    <li class="inline-block">Work</li>
+                    <li class="inline-block"><a href="#heroImg">About</a></li>
+                    <li class="inline-block"><a href="#mySkills">Skills</a></li>
+                    <li class="inline-block"><a href="#myWork">Work</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section class="heroImg">
+        <section id="heroImg">
             <div class="content">
                 <img class="headShot" src="images/headshot.png" alt="Headshot of self" width="300" height="300">
                 <p>Hello! My name is Riley Nilsen. I am UX Designer & Researcher. I love creating user centered designs and creating the best possible experience for each and every User.</p>
@@ -27,7 +30,7 @@
         </section>
 
         <!--My UX Skills coded using CSS Flex-->
-        <section class="mySkills">
+        <section id="mySkills">
             <h1>My UX Skills</h1>
             <div class="flexContainer">
 
@@ -54,7 +57,7 @@
             </div>
         </section>
 
-        <section class="myWork">
+        <section id="myWork">
             <h1>My Work</h1>
             <div class="workGrid">
 
@@ -67,13 +70,14 @@
                     <!--TourGuide Description-->
                     <div class="tourGuide_content gridChild">
                         <h4>TourGuide Mobile App</h4>
+                        <div id="tourGuide_words" style="display:none;">
                         <p>TourGuide is an app designed to be the final travel app. TourGuide allows a user to book and schedule all aspects of travel including lodging, activities, and transportation.</p>
-                        <button>View Project</button>
+                        </div>
+                        <button id="button1">View Project</button>
                     </div>
                 
 
                 <!-- Second Project Website Redesign-->
-                
                     <!--Website Redesign Image-->
                     <div class="website_image gridChild">
                         <img src="images/website.jpg" alt="Website Redesign image placeholder" height="200" width="300">
@@ -82,8 +86,10 @@
                     <!--Website Redesign Description-->
                     <div class="website_content gridChild">
                         <h4>ProCon.org Site Redesign</h4>
+                        <div id="procon_words" style="display:none;">
                         <p>The redesign of ProCon.org was a redesign oof the main homepage navigation and layout. This was done to improve the users ability to navigate the site as well as their ability to wuickly trust the site.</p>
-                        <button>View Project</button>
+                        </div>
+                        <button id="button2">View Project</button>
                     </div>
                     
             </div>
@@ -91,12 +97,13 @@
 
         <footer>
             <ul>
-                <li class="inline-block">About</li>
-                <li class="inline-block">Skills</li>
-                <li class="inline-block">Work</li>
+                <li class="inline-block"><a href="#heroImg">About</a></li>
+                <li class="inline-block"><a href="#mySkills">Skills</a></li>
+                <li class="inline-block"><a href="#myWork">Work</a></li>
             </ul>
         </footer>
 
     </body>
     <script src="js/index.js"></script>
+    
 </html>
